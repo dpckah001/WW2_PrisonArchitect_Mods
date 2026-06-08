@@ -1,0 +1,29 @@
+BEGIN Vehicle
+  Name Stuka_Bomber
+  Description Ju-87斯图卡，俯冲轰炸机，定点投弹，高伤害+起火，专治暴乱扎堆
+  Type Helicopter
+  Sprite graphics/stuka_bomber.png
+  Speed 3.5
+  MaxSpeed 3.5
+  Capacity 0
+  MaxFuel 100
+  FuelConsumption 0.14
+  SoundLoop sounds/stuka_dive
+  
+  CanTransportPrisoners false
+  CanTransportCells false
+  CanTransportSupplies false
+  CanTransportDogs false
+  CanTransportElite false
+  CanTransportGuards false
+  
+  AttackType DiveBomb
+  AttackPower 85
+  AttackRadius 3
+  AttackCooldown 90
+  CausesFire true
+  
+  Category Security
+  Size 2 2
+  
+END Vehicle

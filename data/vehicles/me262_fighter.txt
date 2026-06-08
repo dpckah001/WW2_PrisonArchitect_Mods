@@ -1,0 +1,30 @@
+BEGIN Vehicle
+  Name Me262_Fighter
+  Description Me-262喷气战斗机，高速低空扫射，长距离压制，大面积控场
+  Type Helicopter
+  Sprite graphics/me262_fighter.png
+  Speed 6.0
+  MaxSpeed 6.0
+  Capacity 0
+  MaxFuel 90
+  FuelConsumption 0.18
+  SoundLoop sounds/me262_jet
+  
+  CanTransportPrisoners false
+  CanTransportCells false
+  CanTransportSupplies false
+  CanTransportDogs false
+  CanTransportElite false
+  CanTransportGuards false
+  
+  AttackType Strafe
+  AttackPower 35
+  AttackRadius 8
+  AttackCooldown 60
+  CausesFire false
+  SuppressPrisoners true
+  
+  Category Security
+  Size 2 2
+  
+END Vehicle

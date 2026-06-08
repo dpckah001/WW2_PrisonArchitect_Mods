@@ -1,0 +1,21 @@
+BEGIN Object
+  Name ME323_Military_Helipad
+  Description ME323军用停机坪 - 紧急召唤空投精英士兵
+  Category Security
+  Sprite graphics/me323_military_helipad.png
+  Size 12 8
+  BuildCost 15000
+  BuildTime 450
+  Materials Concrete 400, Steel 200, Ammo 50
+  
+  Helipad true
+  HelicopterType ME323_Military
+  
+  NeedsElectricity false
+  NeedsWater false
+  SupplyType Manual
+  
+  Loadable false
+  Unloadable true
+  
+END Object

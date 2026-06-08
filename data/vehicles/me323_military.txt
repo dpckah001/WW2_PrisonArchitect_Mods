@@ -1,0 +1,26 @@
+BEGIN Vehicle
+  Name ME323_Military
+  Description 紧急兵力运输机，一次空投120名精英士兵
+  Type Helicopter
+  Sprite graphics/me323_military.png
+  Speed 2.0
+  MaxSpeed 2.0
+  Capacity 120
+  MaxFuel 150
+  FuelConsumption 0.15
+  SoundLoop sounds/me323_engine
+  
+  CanTransportPrisoners false
+  CanTransportCells false
+  CanTransportSupplies false
+  CanTransportDogs false
+  CanTransportElite true
+  CanTransportGuards true
+  
+  UnloadCell false
+  LoadCell false
+  
+  Category Security
+  Size 3 3
+  
+END Vehicle

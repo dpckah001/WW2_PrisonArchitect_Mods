@@ -1,0 +1,24 @@
+[VEHICLES]
+ME323_Cargo=ME323 Gigant (Fracht)
+ME323_Military=ME323 Gigant (Notfalltruppen)
+Stuka_Bomber=Ju-87 Stuka (Sturzbomber)
+Me262_Fighter=Me-262 Düsenjäger
+
+[OBJECTS]
+ME323_Cargo_Helipad=ME323 Frachtlandeplatz
+ME323_Military_Helipad=ME323 Notfall-Militärlandeplatz
+AirSupport_Pad=Luftwaffen-Kommandozentrale
+
+[DESCRIPTIONS]
+Desc_ME323_Cargo=Deutscher Riesentransporter aus dem Zweiten Weltkrieg. Kann 128 Gefangene oder 12 Tonnen Material transportieren. Ideal für tägliche Logistik und Gefangenentransfer.
+Desc_ME323_Military=Notfalltruppen-Transportflugzeug. Kann 120 Elite-Soldaten auf einmal abwerfen. Für kritische Sicherheitssituationen und Gefangenenaufstände.
+Desc_Stuka_Bomber=Ju-87 Stuka, der berühmte deutsche Sturzbomber. Präzisions-Flächenbombardement mit hohem Explosionsschaden und Brandgefahr. Abklingzeit: 90 Sekunden.
+Desc_Me262_Fighter=Me-262 Düsenjäger, das erste Düsenflugzeug im aktiven Einsatz. Hochgeschwindigkeit-Flächenschuss zur Unterdrückung von Gefangenenaufständen. Abklingzeit: 60 Sekunden.
+Desc_ME323_Cargo_Helipad=ME323 Frachtlandeplatz - Automatischer Transport. Günstiger, für den täglichen Gebrauch geeignet.
+Desc_ME323_Military_Helipad=ME323 Notfall-Militärlandeplatz - Ruft Fallschirmjäger auf. Teurer, benötigt Stromversorgung.
+Desc_AirSupport_Pad=Luftwaffen-Kommandozentrale. Ruft Stuka zum Zielflächenbombardement oder Me-262 zum Großflächenbeschuss auf. Benötigt Strom.
+
+[ACTIONS]
+CallStuka=Stuka zum Bombardieren rufen
+CallMe262=Me262 zum Beschuss rufen
+SelectTarget=Zielposition wählen

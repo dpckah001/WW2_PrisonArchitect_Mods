@@ -1,0 +1,20 @@
+BEGIN Object
+  Name AirSupport_Pad
+  Description 二战空军指挥台 - 召唤空袭支援
+  Category Security
+  Sprite graphics/airsupport_pad.png
+  Size 6 6
+  BuildCost 5000
+  BuildTime 200
+  Materials Concrete 150, Steel 100, Electronics 50
+  
+  NeedsElectricity true
+  NeedsWater false
+  
+  Loadable false
+  Unloadable false
+  
+  HasRadar true
+  CanCallStrikeAircraft true
+  
+END Object

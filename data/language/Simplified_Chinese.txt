@@ -1,0 +1,24 @@
+[VEHICLES]
+ME323_Cargo=ME323 巨人（货运）
+ME323_Military=ME323 巨人（紧急兵力）
+Stuka_Bomber=Ju-87 斯图卡（俯冲轰炸机）
+Me262_Fighter=Me-262 喷气战斗机
+
+[OBJECTS]
+ME323_Cargo_Helipad=ME323 货运停机坪
+ME323_Military_Helipad=ME323 紧急军用停机坪
+AirSupport_Pad=空袭指挥台
+
+[DESCRIPTIONS]
+Desc_ME323_Cargo=二战德国巨型运输机，可运128名囚犯或12吨物资。平时用于囚犯转移和物资补给，是监狱的重要后勤工具。
+Desc_ME323_Military=紧急兵力运输机，一次空投120名精英士兵。用于监狱暴乱或重大安全事件时的快速反应。
+Desc_Stuka_Bomber=Ju-87斯图卡，著名的俯冲轰炸机。定点投弹，伤害范围3格，高概率引发火灾。冷却时间：90秒。
+Desc_Me262_Fighter=Me-262喷气战斗机，世界上第一种投入使用的喷气式战斗机。高速扫射，压制范围8格，对大面积囚犯暴乱有效。冷却时间：60秒。
+Desc_ME323_Cargo_Helipad=ME323货运停机坪 - 自动运输模式。造价较低，适合日常使用。
+Desc_ME323_Military_Helipad=ME323紧急军用停机坪 - 召唤伞兵。造价较高，需要电力支持。
+Desc_AirSupport_Pad=空袭指挥台，控制中心。可召唤斯图卡进行定点轰炸或Me-262进行大范围扫射。需要电力运作。
+
+[ACTIONS]
+CallStuka=召唤斯图卡投弹
+CallMe262=召唤Me262扫射
+SelectTarget=选择目标位置
