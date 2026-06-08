@@ -1,0 +1,26 @@
+BEGIN Vehicle
+  Name ME323_Cargo
+  Description 二战德国巨型运输机，可运128名囚犯或12吨物资
+  Type Helicopter
+  Sprite graphics/me323_cargo.png
+  Speed 2.2
+  MaxSpeed 2.2
+  Capacity 128
+  MaxFuel 120
+  FuelConsumption 0.12
+  SoundLoop sounds/me323_engine
+  
+  CanTransportPrisoners true
+  CanTransportCells true
+  CanTransportSupplies true
+  CanTransportDogs false
+  CanTransportElite false
+  CanTransportGuards false
+  
+  UnloadCell false
+  LoadCell false
+  
+  Category Security
+  Size 3 3
+  
+END Vehicle

@@ -1,4 +1,6 @@
-# WW2 Germany Prison Architect Mod Pack
+# WW2 Germany Aircraft Support System
+
+## 完整的二战德国军事飞机模组
 
 完整的第二次世界大战德国军事模组包，包含运输、轰炸和扫射三大系统。
 
@@ -25,43 +27,49 @@
 
 ```
 WW2_PrisonArchitect_Mods/
-├── mod.info
-├── README.md
+├── manifest.txt                  (模组元数据)
+├── README.md                     (文档)
 ├── data/
-│   ├── vehicles/
-│   │   ├── me323_cargo.txt
-│   │   ├── me323_military.txt
-│   │   ├── stuka_bomber.txt
-│   │   └── me262_fighter.txt
-│   ├── objects/
-│   │   ├── me323_cargo_helipad.txt
-│   │   ├── me323_military_helipad.txt
-│   │   └── airsupport_pad.txt
-│   └── language/
-│       ├── Simplified_Chinese.txt
-│       └── German.txt
-├── graphics/
-│   ├── me323_cargo.png (待制作)
-│   ├── me323_military.png (待制作)
-│   ├── stuka_bomber.png (待制作)
-│   ├── me262_fighter.png (待制作)
-│   ├── me323_cargo_helipad.png (待制作)
-│   ├── me323_military_helipad.png (待制作)
-│   └── airsupport_pad.png (待制作)
-├── sounds/
-│   ├── me323_engine.wav (待制作)
-│   ├── stuka_dive.wav (待制作)
-│   ├── stuka_bomb.wav (待制作)
-│   ├── me262_jet.wav (待制作)
-│   └── me262_mg.wav (待制作)
-└── lua/
-    └── airsupport.lua
+│   ├── aircraft.txt              (统一配置入口)
+│   ├── prison/
+│   │   ├── vehicles/             (飞机配置)
+│   │   │   ├── me323_cargo.txt
+│   │   │   ├── me323_military.txt
+│   │   │   ├── stuka_bomber.txt
+│   │   │   └── me262_fighter.txt
+│   │   └── objects/              (建筑配置)
+│   │       ├── me323_cargo_helipad.txt
+│   │       ├── me323_military_helipad.txt
+│   │       └── airsupport_pad.txt
+│   ├── language/                 (本地化)
+│   │   ├── Simplified_Chinese.txt
+│   │   └── German.txt
+│   ├── scripts/                  (脚本)
+│   │   └── airsupport.lua
+│   ├── sounds/                   (音效)
+│   │   ├── me323_engine.wav
+│   │   ├── stuka_dive.wav
+│   │   ├── stuka_bomb.wav
+│   │   ├── me262_jet.wav
+│   │   └── me262_mg.wav
+│   └── sprite/                   (图形)
+│       ├── me323_cargo.png
+│       ├── me323_military.png
+│       ├── stuka_bomber.png
+│       ├── me262_fighter.png
+│       ├── me323_cargo_helipad.png
+│       ├── me323_military_helipad.png
+│       └── airsupport_pad.png
+└── thumbnail.png                 (模组图标)
 ```
 
 ## 安装方法
 
 1. 下载仓库或克隆到本地
-2. 复制整个文件夹到 Prison Architect 的 mods 目录
+2. 复制整个 `WW2_PrisonArchitect_Mods` 文件夹到 Prison Architect 的 mods 目录：
+   ```
+   C:\Users\[用户名]\AppData\Local\Introversion\Prison Architect\mods\
+   ```
 3. 游戏内启用模组
 4. 重新开始游戏
 
@@ -78,7 +86,7 @@ WW2_PrisonArchitect_Mods/
 - 飞机自动执行任务后离场
 
 ## 冷却时间
-- 斯图卡（Stuka）：90秒
+- 斯图卡：90秒
 - Me262：60秒
 - ME323 兵力运输：120秒
 
@@ -102,15 +110,15 @@ WW2_PrisonArchitect_Mods/
 - **特效**：会引发火灾
 - **速度**：3.5（中等）
 - **冷却**：90秒
-- **用途**：定点打击囚犯暴乱聚集区
+- **用途**：定点打击暴乱聚集区
 
 ### Me-262 喷气战机
 - **扫射伤害**：35（范围伤害）
 - **范围**：8格直线
-- **效果**：压制囚犯（停止反抗）
-- **速度**：6.0（最快）
+- **特效**：压制囚犯
+- **速度**：6.0（极快）
 - **冷却**：60秒
-- **用途**：大面积囚犯暴乱压制
+- **用途**：大面积暴乱压制
 
 ## 历史背景
 
@@ -121,35 +129,16 @@ WW2_PrisonArchitect_Mods/
 
 ### Ju-87 斯图卡（Junkers Ju 87 Stuka）
 - 著名的俯冲轰炸机
-- 标志性的尖啸声（恐怖心理作用）
+- 标志性的尖锐啸叫声（心理作用）
 - 精准性强，常用于定点打击
 
 ### Me-262 喷气战机（Messerschmitt Me 262）
 - 世界上第一种投入实战的喷气式战斗机
 - 速度极快（900km/h）
-- 装备4门30mm机炮
-
-## 技术说明
-
-### Lua脚本架构
-- `airsupport.lua`：核心冷却系统、任务管理、伤害计算
-- 支持多任务并发执行
-- 模块化设计，易于扩展
-
-### 扩展计划
-- [ ] 像素艺术图形（4张飞机+3张停机坪）
-- [ ] 音效系统（5个音文件）
-- [ ] He-111轰炸机（投放照明弹）
-- [ ] 地对空防御系统
-- [ ] 动态天气影响（雨天不可飞行）
-
-## 兼容性
-- 监狱建筑师 v1.0+
-- 与其他WW2模组兼容
-- 不修改原生游戏文件
+- 装备4×30mm机炮，火力强大
 
 ## 版本历史
-- **v1.0.0** (2026-06-08) - 初始发布
+- **v1.0.0** (2026-06-08) - 初始版本
   - ME323货运/兵力运输
   - 斯图卡轰炸系统
   - Me262扫射系统
@@ -163,6 +152,7 @@ WW2_PrisonArchitect_Mods/
 MIT License - 自由使用、修改、分发
 
 ## 反馈与建议
+
 如有问题或建议，欢迎在GitHub上提Issue！
 
 ---

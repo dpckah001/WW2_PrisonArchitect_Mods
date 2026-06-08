@@ -1,0 +1,8 @@
+[MOD]
+Id=WW2_Germany_Aircraft_Support
+Title=WW2 Germany Aircraft Support System
+Author=dpckah001
+Version=1.0.0
+GameVersion=1.0.0+
+Description=Complete WW2 German military aircraft mod system: ME323 transport, Stuka dive bombing, Me262 jet strafing
+Website=https://github.com/dpckah001/WW2_PrisonArchitect_Mods

@@ -1,0 +1,13 @@
+# ============ WW2 German Aircraft Configuration ============
+# 二战德国飞机配置总入口
+
+# ============ Vehicles - 飞机 ============
+Include data/prison/vehicles/me323_cargo.txt
+Include data/prison/vehicles/me323_military.txt
+Include data/prison/vehicles/stuka_bomber.txt
+Include data/prison/vehicles/me262_fighter.txt
+
+# ============ Objects - 建筑 ============
+Include data/prison/objects/me323_cargo_helipad.txt
+Include data/prison/objects/me323_military_helipad.txt
+Include data/prison/objects/airsupport_pad.txt

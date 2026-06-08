@@ -1,0 +1,21 @@
+BEGIN Object
+  Name ME323_Cargo_Helipad
+  Description ME323货运停机坪 - 自动运输囚犯和物资
+  Category Logistics
+  Sprite graphics/me323_cargo_helipad.png
+  Size 12 8
+  BuildCost 8000
+  BuildTime 300
+  Materials Concrete 300, Steel 100
+  
+  Helipad true
+  HelicopterType ME323_Cargo
+  
+  NeedsElectricity false
+  NeedsWater false
+  SupplyType Auto
+  
+  Loadable true
+  Unloadable true
+  
+END Object
